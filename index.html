@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"> 
+        <!-- codificacipn-->
+        <meta name="viewport" content="width=device-width">
+        <title>Portafolio Nelson Torres</title>
+        <meta name="description" content="Portafolio de Nelson Eduardo
+        Torres Rivera desarrollo BackEnd especializado en bases de datos">
+
+        <!--open graph-->    
+
+        <meta property="og:title" content="Portafolio Nelson ">
+        <meta property="og:description" content="Portafolio de Nelson Eduardo
+        Torres Rivera desarrollo BackEnd especializado en bases de dato">
+        <meta property="og:image" content="images/yo.jpg">
+        <meta property="og:image:alt" content="Fotografia Nelson Eduardo">
+
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+        <link rel="icon " href="images/yo.jpg">
+
+        <style>
+            body{
+                background-color: rgb(46, 182, 192);
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Portafolio Nelson Torres</h1>
+            <nav>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="https://www.google.com" target="_blank" rel="noreferrer">Google</a>
+
+
+            </nav>
+        </header>
+
+        <dialog id="modal">
+            <h1>¡Sabes que se puede abrit una modal Así?</h1>
+            <p>¡Es totalmente nativo!</p>
+            <button id="hide">Cerrar modal</button>
+        </dialog>
+        <button id ="show">Ver más Información </button>
+        <script>
+            window.show.addEventListener('click', () => {
+                window.modal.show()
+            })
+            window.hide.addEventListener('click', () =>{
+                window.modal.close()
+            })
+        </script>
+
+        <main>
+
+        <!--Video-->
+        <!--<video controls src="funte"></video>-->
+        <!-- esto es u comentirio-->
+        <p><strong>Ingeniero Electornico</strong> con experencia en desarrollo Back End 
+            y conocimiento en la gestion de bases de datos
+        </p>
+
+        <h2 id="experencia">Experencia</h2>
+
+        <ul>
+            <li class="list-item">Sistemea G&G - Julio 2023 - octubre 2023</li>
+        </ul>
+
+        <img 
+            id="photo-image"
+            width="250"
+            height="300" 
+            src="images/yo.jpg" 
+            alt="Imgen de Nelso Torres" 
+            title="Foto de Nelson Torres"
+        >
+        <h2 id="proyectos">Proyecto Realizados</h2>
+        <aside>
+            <header>
+                <h4>Mis Tecnologias Favoritas</h4>
+            </header>
+            <ol>
+                <li>java</li>
+                <li>python</li>
+                <li>html</li>
+                <li>sql</li>
+                <li>SpringBoot</li>
+            </ol>
+        </aside>
+        <section>
+            <article>
+                <header>
+                    <h4>
+                        Nueva forma de realizar compras
+                    </h4>
+                    <p>
+                        Una nueva forma de realizar compras
+                    </p>
+                    <footer>
+                        <small>Tecnologias Usadas: Python, WebScraping, HTML, Django, Vue</small>
+                    </footer>
+                </header>
+            </article>
+        </section>
+        <section>
+            <header>
+                <h2>Preguntas Frecuentas</h2>
+            </header>
+            <details open>
+                <summary>¿Qué estudios tienes?</summary>
+                <p>Estudié ingenieria electronico, y especializacón en Bases de Datos
+                    en la Universidad Pedagogica y Tecnologica de Colombia</p>
+            </details>
+            <details>
+                <summary>¿Cuales son tus hobbis?</summary>
+                <p>
+                    Me gusta el futbol y la musica
+                </p>
+            </details>
+        </section>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form method="post" action="/" >
+                <fieldset>
+                    <legend>Información personal </legend>
+                    <div>
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name" 
+                        placeholder="Nelson Torres" autocomplete="name" required>
+                    </div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" 
+                    placeholder="nelson@gmail.com" autocomplete="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Informacipon Adicional</legend>
+                    <label for="phone">Telefono: </label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{9}" autocomplete="tel">
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">¿Por qué quieres Contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Mas información</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="terms">¿Acepta los terminos?</label>
+                        <input type="checkbox" name="terms" id="terms" required>
+                    </div>
+                    <div>
+                        <datalist id="lenguages">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Kotlin">Kotlin</option>
+                        </datalist>
+                        <label>
+                            ¿Con que lenguaje quieres que te ayude?
+                            <input list="lenguages" name="lenguages">
+                        </label>
+                    </div>
+                </fieldset>
+                <!--<input type="submit" value="Enviar Contenido">-->
+                <button>Enviar Contenido</button>
+            </form>
+        </section>
+        </main>
+        <footer>
+            El portafolio mas genial del mundo
+            <a href="tel:+573164388401">Llamar al telefono</a>
+            <a href="mailto:netory4@gmail.com">Enviar email a Nelson Torres</a>
+        </footer>
+
+    </body> 
+</html>
+
